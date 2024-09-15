@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Fruit.ai</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <p class="description">Here you can find answers to the most commonly asked questions about Fruit.ai. If you have any other questions, feel free to add them below!</p>
+        
+        <div id="faqList">
+            <!-- Sample FAQs for user reference (Non-deleteable) -->
+            <div class="faq-item non-editable">
+                <span class="faq-text">What is Fruit.ai?</span>
+                <!-- No delete button for non-editable FAQs -->
+            </div>
+            <div class="faq-item non-editable">
+                <span class="faq-text">How can I track my fruit intake?</span>
+                <!-- No delete button for non-editable FAQs -->
+            </div>
+            <div class="faq-item non-editable">
+                <span class="faq-text">Can I translate fruit information into other languages?</span>
+                <!-- No delete button for non-editable FAQs -->
+            </div>
+            <div class="faq-item non-editable">
+                <span class="faq-text">How do I contact customer support?</span>
+                <!-- No delete button for non-editable FAQs -->
+            </div>
+            
+            <!-- User-editable FAQs -->
+            <div class="faq-item">
+                <span class="faq-text">What are the benefits of using Fruit.ai?</span>
+                <button class="delete-btn" onclick="deleteFAQ(this)">Delete</button>
+            </div>
+            <div class="faq-item">
+                <span class="faq-text">How do I create a new account?</span>
+                <button class="delete-btn" onclick="deleteFAQ(this)">Delete</button>
+            </div>
+            <div class="faq-item">
+                <span class="faq-text">Is there a mobile app available?</span>
+                <button class="delete-btn" onclick="deleteFAQ(this)">Delete</button>
+            </div>
+            <div class="faq-item">
+                <span class="faq-text">How can I reset my password?</span>
+                <button class="delete-btn" onclick="deleteFAQ(this)">Delete</button>
+            </div>
+        </div>
+        
+        <form id="faqForm">
+            <label for="faqInput">Add a new FAQ:</label>
+            <input type="text" id="faqInput" placeholder="Enter new FAQ" required>
+            <button type="submit">Add FAQ</button>
+        </form>
+    </div>
+    <script src="js/faq.js"></script>
+</body>
+</html>

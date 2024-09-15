@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit.ai</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Fruit List</h2>
+        <div id="fruitList">
+            <div class="fruitCard" onclick="showFruitDetails('Apple')">🍎 Apple</div>
+            <div class="fruitCard" onclick="showFruitDetails('Banana')">🍌 Banana</div>
+            <div class="fruitCard" onclick="showFruitDetails('Orange')">🍊 Orange</div>
+        </div>
+        <div id="fruitDetails" class="hidden">
+            <h3 id="fruitName">Fruit Details</h3>
+            <p id="fruitDescription"></p>
+        </div>
+    </div>
+    <script src="js/chatbot.js"></script>
+</body>
+</html>
